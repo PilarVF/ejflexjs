@@ -1,0 +1,38 @@
+/*
+Autora: María del Pilar Vaquero Fernández
+Fecha: 20 de abril de 2023
+Ejercicios JS
+*/
+
+h2 {
+    text-align: center;
+}
+
+#cajagrande {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.estilo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.estilo2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cajita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+}

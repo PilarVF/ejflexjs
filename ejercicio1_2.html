@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+Autora: María del Pilar Vaquero Fernández
+Fecha: 20 de abril de 2023
+Ejercicios JS
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO PROPUESTO 1 - AVANZADO</title>
+</head>
+
+<body>
+    <script>
+        var num = parseInt(prompt("Escribe un número."));
+        var veces = parseInt(prompt("Escribe otro número."));
+
+        for (var i = 0; i < veces; i++) {
+            document.write(num);
+            if ((i + 1) % 8 == 0) {
+                document.write('<br/>');
+            }
+        }
+    </script>
+</body>
+
+</html>
