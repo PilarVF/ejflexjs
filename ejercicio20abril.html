@@ -16,7 +16,7 @@ Ejercicios JS
     <script>
         function pedirPosicion() {
             var posicion = prompt("Elige un número del 1 al 5.");
-            var color = prompt("Elige uno de estos colores: verde, amarillo o rojo.");
+            var color = prompt("Elige uno de estos colores: azul, verde o rojo.");
             generarPiramide(posicion, color);
         }
 
@@ -25,11 +25,11 @@ Ejercicios JS
             elemento.innerHTML = "";
 
             switch (color) {
+                case "azul":
+                    elemento.style.backgroundColor = "blue";
+                    break;
                 case "verde":
                     elemento.style.backgroundColor = "green";
-                    break;
-                case "amarillo":
-                    elemento.style.backgroundColor = "yellow";
                     break;
                 case "rojo":
                     elemento.style.backgroundColor = "red";
