@@ -11,7 +11,7 @@ Ejercicios JS
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EJERCICIO JS (20/04/2023)</title>
+    <title>EJERCICIO FLEX JS (20/04/2023)</title>
     <link href="./style.css" rel="stylesheet" />
     <script>
         function pedirPosicion() {
@@ -43,11 +43,15 @@ Ejercicios JS
             for (var i = 1; i <= 3; i++) {
                 var caracter = '';
                 for (var j = 1; j <= 5 + (i - 1); j++) {
-                    if (j > (3 - i) && j < (3 + i)) {
-                        caracter += 'o';
+                if (j > (3 - i) && j < (3 + i)) {
+                    if ((i == 1 && j == 3) || (i == 3 && j == 1) || (i == 3 && j == 5)) {
+                        caracter += '*';
                     } else {
-                        caracter += '&nbsp';
+                        caracter += 'o';
                     }
+                } else {
+                    caracter += '&nbsp';
+                }
                 }
                 elemento.innerHTML += caracter + '<br/>';
             }
